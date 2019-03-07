@@ -1,0 +1,9 @@
+<p>
+    {{ id }}
+</p>
+
+<ul>
+    <li *ngFor="let model of models" [routerLink]="[model.id]">
+        <a>Model: {{model.model}}</a>
+    </li>
+</ul>
